@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leave History</title>
+  <link rel="stylesheet" href="style.csss">
+</head>
+<body>
+  <div class="main-container">
+    <h2>Leave History</h2>
+    <div class="filter-bar">
+      <label>Filter period:</label>
+      <select id="periodFilter">
+        <option value="all">All Time</option>
+      </select>
+      <span id="employeeEilterWrap">
+        <label>Employee:</label>
+        <select id="employeeFilter">
+          <option value="">All</option>
+        </select>
+      </span>
+      <button onclick="historyApplyFilter()">Apply</button>
+    </div>
+    <div id="historyTable"></div>
+    <button onclick="window.location.href='dashboard.html';">Back to Dashboard</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
